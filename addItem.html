@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="pure-min.css">
     <link rel="stylesheet" href="css/additem.css">
-<!--
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -23,7 +22,7 @@
             $("#datepicker").datepicker();
         });
     </script>
--->
+
 
     <script src="js/item.js"></script>
     <!--[if lte IE 8]>
@@ -36,14 +35,20 @@
 
 
 
+<script>
+    var initialMetal = 1;
+    function run(){
 
+        initialMetal = document.getElementById("metaltypeselector").value
+        document.getElementById("metalDetails").innerHTML = metal( initialMetal);
+    
+}
+</script>
 
 
 </head>
 
 <body>
-
-
 
 
 
@@ -94,13 +99,13 @@
 
 
 
-        <div id="addItemForm" align="center">
+        <div class = "doge">
 
 
             <form name="additem" action="addItem.html">
-
+            
                 <label>Metal </label>
-                <select id = metaltypeselector>
+                <select id = metaltypeselector onchange = "run()">
                     <option value="1">Gold </option>
                     <option value="2"> Silver</option>
                     <option value="3"> Platinum</option>
@@ -128,40 +133,43 @@
                 <label>Unit </label>
                 <input type="number"> </input>
                 <br>
-
-                <table id="metalDetails">
+    
+                <table cellspacing = 10>
 
                     <tr>
-                        <td id = metalDetails> %</td>
+                        <td id = metalDetails> Gold %</td>
                         <td>0.999</td>
                     </tr>
                     <tr>
-                        <td>Weight/unit (g) %</td>
+                        <td id = weightDetails>Weight/unit (g) %</td>
                         <td>1.244</td>
                     </tr>
+                        <tr>
+                        <td>Gold g/u</td>
+                        <td>1.244</td>
+                    </tr>
+                        <tr>
+                        <td>Gold ozt/u</td>
+                        <td>0.0400</td>
+                    </tr>
+                      <tr>
+                        <td>Total au (ozt)</td>
+                        <td>0.0400</td>
+                    </tr>
+                       <tr>
+                        <td><b>TOTAL</b></td>
+                        <td id = "totalDollarAmount">0</td>
+                    </tr>
 
-                </table>
-                <br>
-                <p> </p>
-                <p> </p>
+                </table> 
+    <br><br> 
+    <input type="button" value="Cancel" >
+    
+    <input type="submit" value="Save My Stack">
 
-<script>
+    </form>
 
-   var sel = document.getElementById('metaltypeselector');
-
-document.getElementById("metalDetails").innerHTML = metal(selectedValue);
-</script>
-    <button onclick="metal(1)">HI</button>
-                <a href="addItem.html">
-                    <input type="button" value="Cancel">
-                </a>
-
-
-                <a href="addItem.html">
-                    <input type="submit" value="Save to My Stack">
-                </a>
-            </form>
-
+<br>
 
 
         </div>

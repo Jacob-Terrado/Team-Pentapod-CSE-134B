@@ -8,10 +8,13 @@ var platinum = {one: 7, two: 8, three : 9, id: platinum};
 function metal(value) {
     
     "use strict";
-   // console.log("SUP");
-    console.log(gold.one);
-        return "GOLD BABY";
-
+  
+    if(value == 1) { console.log("gold"); return "Gold %"; }
+    if(value == 2) { console.log("silver");return "Silver %"; }
+    if(value == 3) { console.log("platinum" );return "Platinum %"; }
+    
+    
+    console.log("Error: Selector tag not returning any value");
 
 };
 
