@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+
+    <title>Team Pentapod</title>
+
+
+
+
+    <link rel="stylesheet" href="pure-min.css">
+    <link rel="stylesheet" href="css/additem.css">
+<!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">PENTAPOD.</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="" class="pure-menu-link">HOME</a>
+                    </li>
+                    <li class="pure-menu-item"><a href="coin.html" class="pure-menu-link">GOLD</a>
+                    </li>
+
+                    <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+                        <a href="#" class="pure-menu-link">SILVER</a>
+                    </li>
+
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">PLATINUM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div class="header">
+                <h1>TEAM PENTAPOD</h1>
+                <h2>jason.dustin.jacob.anthony.that's it.</h2>
+            </div>
+        </div>
+
+        <div id="addItem">
+
+            arrowIMG + Add Item
+
+
+        </div>
+
+
+
+
+
+
+
+        <div id="addItemForm" align="center">
+
+
+            <form name="additem" action="addItem.html">
+
+                <label>Metal </label>
+                <select>
+                    <option value="Gold">Gold </option>
+                    <option value="Silver"> Silver</option>
+                    <option value="Platinum"> Platinum</option>
+                </select>
+                <br>
+
+                <label>Type </label>
+                <select>
+                    <option value="Coin">Coin </option>
+                    <option value="US Eagle"> US Eagle</option>
+                    <option value="Bullion"> Bullion</option>
+                </select>
+                <br>
+
+                <label>Purchase Date </label>
+                <input type="text" id="datepicker"> </input>
+                <br>
+                <label>Qty.</label>
+                <input type="number"> </input>
+                <br>
+                <label>Premium </label>
+                <input type="number"> </input>
+                <br>
+
+                <label>Unit </label>
+                <input type="number"> </input>
+                <br>
+
+
+                <table id="metalDetails">
+
+                    <tr>
+                        <td>Gold %</td>
+                        <td>0.999</td>
+                    </tr>
+                    <tr>
+                        <td>Weight/unit (g) %</td>
+                        <td>1.244</td>
+                    </tr>
+
+                </table>
+                <br>
+                <p> </p>
+                <p> </p>
+                <a href="addItem.html">
+                    <input type="button" value="Cancel">
+                </a>
+
+
+                <a href="addItem.html">
+                    <input type="submit" value="Save to My Stack">
+                </a>
+            </form>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="js/ui.js"></script>
+
+
+</body>
+
+</html>

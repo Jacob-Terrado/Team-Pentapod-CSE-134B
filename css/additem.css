@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+form {  width: 600px; }
+select{ width: 200px; }
+
+.clear { clear: both; height: 0; line-height: 0; }
+.floatright { float: right; }
+
+#addItemForm{
+
+    text-align:right;
+}
+
+div{
+    line-height: 30px;
+}
+
+#metalDetails{
+ width: 200px;
+ 
+float:right;
+   table {border: none;}
