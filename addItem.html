@@ -25,6 +25,7 @@
     </script>
 -->
 
+    <script src="js/item.js"></script>
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
     <![endif]-->
@@ -99,10 +100,10 @@
             <form name="additem" action="addItem.html">
 
                 <label>Metal </label>
-                <select>
-                    <option value="Gold">Gold </option>
-                    <option value="Silver"> Silver</option>
-                    <option value="Platinum"> Platinum</option>
+                <select id = metaltypeselector>
+                    <option value="1">Gold </option>
+                    <option value="2"> Silver</option>
+                    <option value="3"> Platinum</option>
                 </select>
                 <br>
 
@@ -128,11 +129,10 @@
                 <input type="number"> </input>
                 <br>
 
-
                 <table id="metalDetails">
 
                     <tr>
-                        <td>Gold %</td>
+                        <td id = metalDetails> %</td>
                         <td>0.999</td>
                     </tr>
                     <tr>
@@ -144,6 +144,14 @@
                 <br>
                 <p> </p>
                 <p> </p>
+
+<script>
+
+   var sel = document.getElementById('metaltypeselector');
+
+document.getElementById("metalDetails").innerHTML = metal(selectedValue);
+</script>
+    <button onclick="metal(1)">HI</button>
                 <a href="addItem.html">
                     <input type="button" value="Cancel">
                 </a>
