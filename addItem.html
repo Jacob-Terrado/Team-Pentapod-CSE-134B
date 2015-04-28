@@ -40,6 +40,9 @@
 
             initialMetal = document.getElementById("metaltypeselector").value
             document.getElementById("metalDetails").innerHTML = metal(initialMetal);
+            
+                        document.getElementById("gu").innerHTML = metalgu(initialMetal);
+            document.getElementById("oz").innerHTML = metaloz(initialMetal);
 
         }
     </script>
@@ -143,11 +146,11 @@
                                     <td>1.244</td>
                                 </tr>
                                 <tr>
-                                    <td>Gold g/u</td>
+                                    <td id=gu>Gold g/u</td>
                                     <td>1.244</td>
                                 </tr>
                                 <tr>
-                                    <td>Gold ozt/u</td>
+                                    <td id=oz>Gold ozt/u</td>
                                     <td>0.0400</td>
                                 </tr>
                                 <tr>
