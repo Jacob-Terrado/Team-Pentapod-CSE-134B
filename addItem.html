@@ -12,10 +12,22 @@
 
 
     <link rel="stylesheet" href="pure-min.css">
-    <link rel="stylesheet" href="css/additem.css">
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+    <!--<![endif]-->
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="js/item.js"></script>
+
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script>
         $(function () {
@@ -23,34 +35,18 @@
         });
     </script>
 
+    <script>
+        function run() {
 
-    <script src="js/item.js"></script>
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/side-menu.css">
-    <!--<![endif]-->
+            initialMetal = document.getElementById("metaltypeselector").value
+            document.getElementById("metalDetails").innerHTML = metal(initialMetal);
 
-
-
-
-<script>
-    var initialMetal = 1;
-    function run(){
-
-        initialMetal = document.getElementById("metaltypeselector").value
-        document.getElementById("metalDetails").innerHTML = metal( initialMetal);
-    
-}
-</script>
-
+        }
+    </script>
 
 </head>
 
 <body>
-
-
 
 
     <div id="layout">
@@ -70,15 +66,16 @@
                     <li class="pure-menu-item"><a href="coin.html" class="pure-menu-link">GOLD</a>
                     </li>
 
-                    <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-                        <a href="#" class="pure-menu-link">SILVER</a>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SILVER</a>
                     </li>
+
 
                     <li class="pure-menu-item"><a href="#" class="pure-menu-link">PLATINUM</a>
                     </li>
                 </ul>
             </div>
         </div>
+
         <div id="main">
             <div class="header">
                 <h1>TEAM PENTAPOD</h1>
@@ -86,98 +83,101 @@
             </div>
         </div>
 
-        <div id="addItem">
-This button needs to be a picture but whatever.
-            Also need image a giant square to insert picture of coin.
-<form align = "left" ><input Type="button" VALUE="Back" onClick="history.go(-1);return true;"></form>
 
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-2-5">
+                <p> Click Image below to upload an image</p>
+                <img src="img/blank.jpg" width="250em" hspace="50px">
+
+            </div>
+
+            <div class="pure-u-1 pure-u-md-3-5">
+
+                <form class="pure-form pure-form-aligned">
+                    <fieldset>
+                        <div class="pure-control-group">
+                            <label for="metaltypeselector">Metal</label>
+                            <select id="metaltypeselector" onchange = "run()" class="pure-input-1-2">
+                                <option value="1">Gold </option>
+                                <option value="2"> Silver</option>
+                                <option value="3"> Platinum</option>
+                            </select>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label>Type</label>
+                            <select id="state" class="pure-input-1-2">
+                                <option value="Coin">Coin </option>
+                                <option value="US Eagle"> US Eagle</option>
+                                <option value="Bullion"> Bullion</option>
+                            </select>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="datepicker">Purchase Date</label>
+                            <input id="datepicker" type="text" placeholder="04/20/2010">
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="qty">Qty.</label>
+                            <input id="qty" type="number" placeholder="0">
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="premium">Premium</label>
+                            <input id="premium" type="number" placeholder="0">
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="unit">Unit</label>
+                            <input id="unit" type="number" placeholder="0">
+                        </div>
+                        <div class="pure-u-1 pure-u-md-3-5">
+                            <table>
+
+                                <tr>
+                                    <td id=metalDetails> Gold %</td>
+                                    <td>0.999</td>
+                                </tr>
+                                <tr>
+                                    <td id=weightDetails>Weight/unit (g) %</td>
+                                    <td>1.244</td>
+                                </tr>
+                                <tr>
+                                    <td>Gold g/u</td>
+                                    <td>1.244</td>
+                                </tr>
+                                <tr>
+                                    <td>Gold ozt/u</td>
+                                    <td>0.0400</td>
+                                </tr>
+                                <tr>
+                                    <td>Total au (ozt)</td>
+                                    <td>0.0400</td>
+                                </tr>
+                                <tr>
+                                    <td><b>TOTAL</b>
+                                    </td>
+                                    <td id="totalDollarAmount">0</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                        <button type="submit" class="pure-button pure-button-primary">Cancel</button>
+
+                        <button type="submit" class="pure-button pure-button-primary">Save to My Stack</button>
+                    </fieldset>
+                </form>
+
+
+            </div>
         </div>
 
 
 
-
-
-
-
-        <div>
-
-
-            <form name="additem" action="addItem.html">
-            
-                <label>Metal </label>
-                <select id = metaltypeselector onchange = "run()">
-                    <option value="1">Gold </option>
-                    <option value="2"> Silver</option>
-                    <option value="3"> Platinum</option>
-                </select>
-                <br>
-
-                <label>Type </label>
-                <select>
-                    <option value="Coin">Coin </option>
-                    <option value="US Eagle"> US Eagle</option>
-                    <option value="Bullion"> Bullion</option>
-                </select>
-                <br>
-
-                <label>Purchase Date </label>
-                <input type="text" id="datepicker"> </input>
-                <br>
-                <label>Qty.</label>
-                <input type="number"> </input>
-                <br>
-                <label>Premium </label>
-                <input type="number"> </input>
-                <br>
-
-                <label>Unit </label>
-                <input type="number"> </input>
-                <br>
-    
-                <table cellspacing = 10>
-
-                    <tr>
-                        <td id = metalDetails> Gold %</td>
-                        <td>0.999</td>
-                    </tr>
-                    <tr>
-                        <td id = weightDetails>Weight/unit (g) %</td>
-                        <td>1.244</td>
-                    </tr>
-                        <tr>
-                        <td>Gold g/u</td>
-                        <td>1.244</td>
-                    </tr>
-                        <tr>
-                        <td>Gold ozt/u</td>
-                        <td>0.0400</td>
-                    </tr>
-                      <tr>
-                        <td>Total au (ozt)</td>
-                        <td>0.0400</td>
-                    </tr>
-                       <tr>
-                        <td><b>TOTAL</b></td>
-                        <td id = "totalDollarAmount">0</td>
-                    </tr>
-
-                </table> 
-    <br><br> 
-    <input type="button" value="Cancel" >
-    
-    <input type="submit" value="Save My Stack">
-
-    </form>
-
-<br>
-
-
-        </div>
 
 
     </div>
-
-
 
 
 
