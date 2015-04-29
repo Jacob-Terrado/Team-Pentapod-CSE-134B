@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-      <script src="js/item.js"></script>
+    <script src="js/item.js"></script>
 
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script>
@@ -40,8 +40,8 @@
 
             initialMetal = document.getElementById("metaltypeselector").value
             document.getElementById("metalDetails").innerHTML = metal(initialMetal);
-            
-                        document.getElementById("gu").innerHTML = metalgu(initialMetal);
+
+            document.getElementById("gu").innerHTML = metalgu(initialMetal);
             document.getElementById("oz").innerHTML = metaloz(initialMetal);
 
         }
@@ -100,7 +100,7 @@
                     <fieldset>
                         <div class="pure-control-group">
                             <label for="metaltypeselector">Metal</label>
-                            <select id="metaltypeselector" onchange = "run()" class="pure-input-1-2">
+                            <select id="metaltypeselector" onchange="run()" class="pure-input-1-2">
                                 <option value="1">Gold </option>
                                 <option value="2"> Silver</option>
                                 <option value="3"> Platinum</option>
@@ -134,7 +134,7 @@
                             <label for="unit">Unit</label>
                             <input id="unit" type="number" placeholder="0">
                         </div>
-                        <div class="pure-u-1 pure-u-md-3-5">
+                        <div class="pure-control-group">
                             <table>
 
                                 <tr>
@@ -166,9 +166,12 @@
                             </table>
 
                         </div>
-                        <button type="submit" class="pure-button pure-button-primary">Cancel</button>
+                        <div class="pure-control-group">
 
-                        <button type="submit" class="pure-button pure-button-primary">Save to My Stack</button>
+                            <button type="submit" class="pure-button pure-button-primary">Cancel</button>
+
+                            <button type="submit" class="pure-button pure-button-primary">Save to My Stack</button>
+                        </div>
                     </fieldset>
                 </form>
 
