@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- Uncomment if we want this to work on Movile
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    -->
-    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Team Pentapod</title>
+
     <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/side-menu.css">  
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/marketing.css">
+
+    <style>
+    .text-over-img {
+      position: absolute;
+      top: 200px;
+      bottom: 0px;
+      width: 50%;
+    }
+    </style>
+
   </head>
   <body>
-    <button class="pure-button pure-button-primary">Sign Up</button>
-    <button class="pure-button">Log In</button>
+    <div class="layout">
+      <div id="main">
+        <div class="header">
+          <h1>TEAM PENTAPOD</h1>
+          <h2>jason.dustin.jacob.anthony.that's it.</h2>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="image">
+      <img class="pure-img" src="img/bullion.png" alt="Bullion Background">
+
+      <div class="content">
+        <h1 class="content-head is-center" style="position:absolute; top: 145px; bottom: 0px; width:50%;">Log In</h1>
+        <form class="pure-form pure-form-stacked text-over-img">
+          <fieldset>
+            <label>E-mail</label>
+            <input type="text" placeholder="Your E-mail">
+            <label>Password</label>
+            <input type="text" placeholder="Your Password">
+            <div class="pure-g">
+            <button type="submit" class="pure-button">Login</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>  
+
+    <div class="footer l-box is-center">
+      Made by Anthony Hem, Dustin Park, Jason Dizon, Jacob Terrado, Matthew Nguyen; <b>Team Pentapod&trade;</b>
+    </div>
+
   </body>
 </html>
