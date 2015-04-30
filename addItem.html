@@ -6,7 +6,10 @@
 
     <title>Team Pentapod</title>
 
+
+    <link rel="stylesheet" href="/css/additem.css">
     <link rel="stylesheet" href="css/pure-min.css">
+
     <link rel="stylesheet" href="css/layouts/side-menu.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -26,7 +29,6 @@
       function run() {
         initialMetal = document.getElementById("metaltypeselector").value; 
         document.getElementById("metalDetails").innerHTML = metal(initialMetal);
-
         document.getElementById("gu").innerHTML = metalgu(initialMetal);
         document.getElementById("oz").innerHTML = metaloz(initialMetal);
       }
@@ -70,6 +72,7 @@
       <div class="pure-g">
         <div class="pure-u-1 pure-u-md-2-5">
           <p> Click Image below to upload an image</p>
+
           <img src="img/blank.jpg" alt="Blank Coin" width="250" style="margin: 0px 50px;">
 
         </div>
@@ -79,7 +82,7 @@
             <fieldset>
               <div class="pure-control-group">
                 <label for="metaltypeselector">Metal</label>
-                  <select id="metaltypeselector" onchange="run()" class="pure-input-1-2">
+                  <select class="pure-input-1-3" id="metaltypeselector" onchange="run()" >
                     <option value="1">Gold </option>
                     <option value="2"> Silver</option>
                     <option value="3"> Platinum</option>
@@ -89,7 +92,7 @@
 
               <div class="pure-control-group">
                 <label>Type</label>
-                  <select id="state" class="pure-input-1-2">
+                  <select id="state" class = "pure-input-1-3">
                     <option value="Coin">Coin </option>
                     <option value="US Eagle"> US Eagle</option>
                     <option value="Bullion"> Bullion</option>
@@ -99,26 +102,26 @@
               
               <div class="pure-control-group">
                 <label for="datepicker">Purchase Date</label>
-                <input id="datepicker" type="text" placeholder="04/20/2010">
+                <input class="pure-input-1-3" id="datepicker" type="text" placeholder="04/20/2010">
               </div>
 
               <div class="pure-control-group">
                 <label for="qty">Qty.</label>
-                <input id="qty" type="number" placeholder="0">
+                <input class="pure-input-1-3" id="qty" type="number" placeholder="0">
               </div>
 
               <div class="pure-control-group">
                 <label for="premium">Premium</label>
-                <input id="premium" type="number" placeholder="0">
+                <input class="pure-input-1-3" id="premium" type="number" placeholder="0">
               </div>
 
               <div class="pure-control-group">
                 <label for="unit">Unit</label>
-                <input id="unit" type="number" placeholder="0">
+                <input class="pure-input-1-3" id="unit" type="number" placeholder="0">
               </div>
                         
               <div class="pure-control-group">
-                <table>
+                <table id = "metaltabledetails" align ="center">
                   <tr>
                     <td id="metalDetails"> Gold %</td>
                     <td>0.999</td>
