@@ -1,0 +1,10 @@
+#goldcoin {
+    margin: "25 25px"
+}
+
+#goldcaption {
+    float: left;
+    margin-left: 30px;
+    font-size: 55%;
+    margin-right: 30px;
+}
