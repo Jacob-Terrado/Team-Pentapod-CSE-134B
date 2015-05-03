@@ -1,8 +1,14 @@
 #upload {
-    margin: 0px 25px;
+  <!--  margin: 0px 25px;-->
     margin-bottom: 25px;
 }
 
 #blankcoin {
-    margin: 0px 25px;
+   <!-- margin: 0px 25px; -->
+}
+#onefith{
+ 
+    background-color: #FFFFF5;
+        font-family: "Helvetica";
+
 }
