@@ -42,6 +42,10 @@ p{
     margin-bottom: 50px;
 }
 
+.aligncenter {
+    text-align: center;
+}
+
 .pure-img2 {
     max-width: 100%;
     height: auto;
