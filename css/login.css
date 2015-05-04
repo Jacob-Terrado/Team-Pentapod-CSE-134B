@@ -1,0 +1,23 @@
+.login {
+  position:absolute;
+  top:15%;
+  bottom: 0px;
+  width:50%;
+  left:25%;
+  right:25%;
+}
+
+.center-page {
+  position:absolute;
+  top:25%;
+  bottom:0px;
+  width:50%;
+  left:25%;
+  right:25%;
+}
+
+.bottom {
+  position:absolute;
+  bottom:0%;
+  width:100%;
+}

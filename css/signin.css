@@ -1,0 +1,17 @@
+.pure-menu-link:hover {
+  background-color: transparent;
+  -webkit-text-size-adjust:100%;
+}
+
+.no-top {
+  margin-top:2%;
+}
+
+.no-top {
+  margin-bottom:0%;
+}
+
+.center-inline {
+  text-align: center;
+  display: inline;
+}
