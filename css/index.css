@@ -92,3 +92,6 @@ h1 {
 .pure-table-horizontal2 tbody>tr:last-child>td {
     border-bottom-width: 0
 }
+table{
+    width:100%;
+}
