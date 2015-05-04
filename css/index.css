@@ -1,0 +1,94 @@
+h3 {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 1px;
+}
+
+.pure-img2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+
+}
+
+.pure-table2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 0px solid #cbcbcb
+}
+
+.pure-table2 caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center
+}
+
+.pure-table2 th {
+    border-left: 0px solid #cbcbcb;
+    border-width: 0 0 0 0px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0 1em
+}
+
+.pure-table2 td {
+    border-left: 0px solid #cbcbcb;
+    border-width: 0 0 0 0px;
+    font-size: small;
+    margin: 0;
+    overflow: visible;
+    padding: 0 1em
+}
+
+.pure-table2 td:first-child,
+.pure-table2 th:first-child {
+    border-left-width: 0
+}
+
+.pure-table2 thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom
+}
+
+.pure-table2 td {
+    background-color: transparent
+}
+
+.pure-table-odd2 td {
+    background-color: #f2f2f2
+}
+
+.pure-table-striped2 tr:nth-child(2n-1) td {
+    background-color: #f2f2f2
+}
+
+.pure-table-bordered2 td {
+    border-bottom: 1px solid #cbcbcb
+}
+
+.pure-table-bordered2 tbody>tr:last-child>td {
+    border-bottom-width: 0
+}
+
+.pure-table-horizontal2 td,
+.pure-table-horizontal2 th {
+    border-width: 0 0 1px;
+    border-bottom: 1px solid #cbcbcb
+}
+
+.pure-table-horizontal2 tbody>tr:last-child>td {
+    border-bottom-width: 0
+}
