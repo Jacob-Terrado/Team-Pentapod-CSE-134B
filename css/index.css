@@ -27,8 +27,16 @@ div {
 
 p{
     margin: 0;
-    text-align: left;
+    text-align: right;
     font-size: small;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
 }
 
 .pure-img2 {
