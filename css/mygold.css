@@ -1,11 +1,16 @@
 #goldtitle{
     
-    font-size: 90%
+    font-size: 90%;
+    margin-top: -20px;
     
 }
 
 #body{
     
-    background-color: #FFFFF5
+    background-color: #FFFFF5;
     
+}
+
+#spotnum{
+    margin-top: -20px;
 }
