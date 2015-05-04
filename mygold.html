@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,122 +11,129 @@
     <link rel="stylesheet" href="css/grids-responsive-min.css">
     <link rel="stylesheet" href="css/side-menu.css">
     <link rel="stylesheet" href="css/mygold.css">
-  </head>
-  <body id="body">  
+</head>
+
+<body id="body">
     <div id="layout">
-      <!-- Menu toggle -->
-      <a href="#menu" id="menuLink" class="menu-link">
-          <!-- Hamburger icon -->
-          <span></span>
-      </a>
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
 
-      <div id="menu">
-        <div class="pure-menu">
-          <a class="pure-menu-heading" href="index.html">PENTAPOD.</a>
-          <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="" class="pure-menu-link">HOME</a>
-            </li>
-            <li class="pure-menu-item"><a href="coin.html" class="pure-menu-link">GOLD</a>
-            </li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">SILVER</a>
-            </li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">PLATINUM</a>
-            </li>
-          </ul>
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="index.html">PENTAPOD.</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="" class="pure-menu-link">HOME</a>
+                    </li>
+                    <li class="pure-menu-item"><a href="coin.html" class="pure-menu-link">GOLD</a>
+                    </li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">SILVER</a>
+                    </li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">PLATINUM</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
 
-      <div id="main">
-        <div class="header">
-          <h1>GOLD</h1>
+        <div id="main">
+            <div class="header">
+                <h1>GOLD</h1>
+            </div>
         </div>
-      </div>
 
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-lg-1-3">
-          <div class="1-box">
-            <h1 id="money"> $18,342.43</h1>
-            <h6 id="goldtitle"> My Gold Stack Value</h6>
-                  
-            <form align= "center" ACTION="additem.html">
-              <INPUT TYPE="submit" class="pure-button pure-button-primary" VALUE="Add to Stack">
-            </form>
-          </div>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-lg-1-3">
+                <div class="1-box">
+                    <h1 id="money"> $18,342.43</h1>
+                    <h6 id="goldtitle"> My Gold Stack Value</h6>
+                    <div class="buttonHolder"> <a class="pure-button pure-button-primary" href="additem.html">Add to Stack</a>
+                    </div>
 
-          <div>
-            <form>
-              <fieldset>
-                <legend>Current Spot:</legend>
-                <h4>Bid:</h4>
-                <p id="spotnum1">1206.10</p>
-                <div id="ask">
-                  <h4>Ask:</h4>
-                  <p id="spotnum2">1207.10</p>
+
                 </div>
 
-                <div id="change">
-                  <h4>Change:</h4>
-                  <p id="spotnum3">+23.40</p>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>Current Spot:</legend>
+                            <h4>Bid:</h4>
+                            <p id="spotnum1">1206.10</p>
+                            <div id="ask">
+                                <h4>Ask:</h4>
+                                <p id="spotnum2">1207.10</p>
+                            </div>
+
+                            <div id="change">
+                                <h4>Change:</h4>
+                                <p id="spotnum3">+23.40</p>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-              </fieldset>
-            </form>
+
+                <br>
+
+                <form class="pure-form">
+                    <br>
+                    <input class="pure-input-1" type="text" placeholder="Search">
+                    <div class="buttonHolder"> <a class="pure-button pure-button-primary" href="">&nbsp;&nbsp;&nbsp;&nbsp;Search&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-15-24">
+                <img class="pure-img" src="img/goldGraph.png" alt="Graph">
+            </div>
+
+            <div class="pure-u-1">
+                <table id="stacktable" class="pure-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Item</th>
+                            <th>Qty.</th>
+                            <th>Weight/unit (g)</th>
+                            <th>%au</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img id="b1" class="pure-img" src="img/circle.png" alt="doge"> </td>
+                            <td>
+                                <p class="aligncenter"><a href="coin2.html">Octadrachm</a>
+                                </p>
+                            </td>
+                            <td> 1</td>
+                            <td> 1.244</td>
+                            <td> .917</td>
+                            <td> $1199.10 </td>
+                        </tr>
+                        <tr>
+                            <td><img id="b2" class="pure-img" src="img/circle.png" alt="doge2"> </td>
+                            <td> US Eagle</td>
+                            <td> 5</td>
+                            <td> 1.244</td>
+                            <td> .917</td>
+                            <td> $5995.50 </td>
+                        </tr>
+                        <tr>
+                            <td><img id="b3" class="pure-img" src="img/circle.png" alt="doge3"> </td>
+                            <td> US Eagle</td>
+                            <td> 5</td>
+                            <td> 1.244</td>
+                            <td> .917</td>
+                            <td> $5995.50 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
-        <br>
-        
-        <form class = "pure-form">
-          <br>
-          <input class="pure-input-1" type="text" placeholder="Search">
-        </form>
-      </div>
-
-      <div class="pure-u-1 pure-u-md-15-24">
-        <img class="pure-img" src="img/goldGraph.png" alt="Graph">
-      </div>
-
-      <div class="pure-u-1">
-        <table id="stacktable" class="pure-table">
-          <thead>
-            <tr>
-              <th>Image</th>
-              <th>Item</th>
-              <th>Qty.</th>
-              <th>Weight/unit (g)</th>
-              <th>%au</th>
-              <th>Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><img id="b1" class="pure-img" src="img/circle.png" alt="doge"> </td>
-              <td> <p class="aligncenter"><a href="coin2.html">Octadrachm</a></p></td>
-              <td> 1</td>
-              <td> 1.244</td>
-              <td> .917</td>
-              <td> $1199.10 </td>
-            </tr>
-            <tr>
-              <td><img id="b2" class="pure-img" src="img/circle.png" alt="doge2"> </td>
-              <td> US Eagle</td>
-              <td> 5</td>
-              <td> 1.244</td>
-              <td> .917</td>
-              <td> $5995.50 </td>
-            </tr>
-            <tr>
-              <td><img id="b3" class="pure-img" src="img/circle.png" alt="doge3"> </td>
-              <td> US Eagle</td>
-              <td> 5</td>
-              <td> 1.244</td>
-              <td> .917</td>
-              <td> $5995.50 </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
-  </div>
 
     <script src="js/ui.js"></script>
-  </body>
+</body>
+
 </html>
