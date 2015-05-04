@@ -13,19 +13,11 @@
 
     <link rel="stylesheet" href="css/side-menu.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/mystackmobile.css">
 
-    <!-- Should we download the entire jquery UI folder? -->
-    <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
-
-
-    <!-- also wtf is this? -> <link rel="stylesheet" href="/resources/demos/style.css> -->
-
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/item.js"></script>
 </head>
 
-<body>
+<body id="onefith">
     <div id="layout">
         <!-- Menu toggle -->
         <a href="#menu" id="menuLink" class="menu-link">
@@ -53,21 +45,30 @@
             </div>
         </div>
 
-        <div class="pure-u-1-5">
+        <div class="pure-u-1">
 
 
             <div class="1-box">
 
+                        
+   <br>
+                   <br>
 
-                <h1>$24,495.23   Daily +3.5%</h1>
+                <h1>$24,495.23</h1>
+                <h6 id ="value">Total Value</h6>
+                <h6> Daily +3.5%</h6>
+                <h6> Overall +1.2%</h6>
+
 
             </div>
 
 
-            Gold
+            <h1>Gold</h1>
+            <h6> My Gold Value: $18,234.10</h6>
+
             <hr>
 
-            <table class="pure-table" width="100%">
+            <table class="pure-table">
                 <thead>
                     <tr>
                         <th>1206.10</th>
@@ -87,58 +88,62 @@
                     </tr>
                 </tbody>
             </table>
-            <p> </p>
-            Gold
-            <hr>
 
-            <table class="pure-table" width="100%">
+            <h1>Silver</h1>
+            <h6> My Silver Value: $6261.13</h6>
+            <hr>
+            <table class="pure-table">
                 <thead>
                     <tr>
                         <th>1206.10</th>
                         <th>1207.10</th>
                         <th>+23.40</th>
                         <th>+16.40</th>
-
                     </tr>
                 </thead>
                 <tbody>
+
                     <tr>
                         <td> Spot Price</td>
                         <td> Total Ounces</td>
                         <td> Daily</td>
                         <td> Overall</td>
-
                     </tr>
                 </tbody>
-            </table>
-            <p> </p>
-            Platinum
-            <hr>
 
-            <table class="pure-table" width="100%">
+            </table>
+
+            <h1>Platinum</h1>
+            <h6> Total Platinum Value: $0.00</h6>
+
+            <hr>
+            <table class="pure-table">
                 <thead>
                     <tr>
                         <th>1206.10</th>
-                        <th>1207.10</th>
-                        <th>+23.40</th>
-                        <th>+16.40</th>
-
+                        <th>0</th>
+                        <th>-</th>
+                        <th>-</th>
                     </tr>
                 </thead>
                 <tbody>
+
                     <tr>
                         <td> Spot Price</td>
                         <td> Total Ounces</td>
                         <td> Daily</td>
                         <td> Overall</td>
-
                     </tr>
                 </tbody>
+
             </table>
-            <p> </p>
+
         </div>
-
     </div>
+
+
+
+
     <script src="js/ui.js"></script>
 
 </body>
