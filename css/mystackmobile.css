@@ -1,6 +1,10 @@
 table{
-     width:100%;
+    width: 100%;
+    
+    <!-- Allows for the table to scale and aligned to the left -->
+    table-layout: fixed;
 }
+
 
 h6{
     
@@ -14,4 +18,15 @@ h6{
 }
 #blank{
  width:100px;
+}
+
+.pure-table thead{
+    
+    <!-- Provides a fallback for size of 1.2 of viewpoint height
+         when scaling down so it looks nice when device is large and it takes 1.2vh
+        of that and else it does 1.2vh of 360 -->
+    font-size: 360px;
+    
+    <!-- 1.2 of viewing height -->
+    font-size: 1.2vh;
 }
