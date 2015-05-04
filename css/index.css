@@ -34,11 +34,21 @@ p{
     float: right;
 }
 
+.aligntop {
+    margin-top: 50px
+}
+
+.alignbottom {
+    margin-bottom: 50px;
+}
+
 .pure-img2 {
     max-width: 100%;
     height: auto;
     display: block;
     margin-top: 10px;
+    margin-left: 10px;
+
 
 }
 
@@ -48,6 +58,7 @@ p{
     empty-cells: show;
     border: 0px solid #cbcbcb;
     margin-right: 0px;
+    margin-left: 5px;
 
 }
 
