@@ -2,7 +2,8 @@
     
     font-size: 90%;
     margin-top: -20px;
-    
+        text-align:center;
+
 }
 
 #body{
@@ -37,4 +38,7 @@
 }
 #b3{
  width:70px;   
+}
+#money{
+    text-align:center;
 }
