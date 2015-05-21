@@ -21,7 +21,7 @@ window.onload=function(){
 		id:'chartDiv',
 		height:450,
 		width:"100%",
-		data: 'chartData',
-        defaultsurl:"resources/sunny.txt"
+		data: 'chartData'
+     //   defaultsurl:"resources/sunny.txt"
 	});
 };
